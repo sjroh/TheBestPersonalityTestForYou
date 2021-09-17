@@ -1,1 +1,83 @@
-Hello
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>The Best Personality Test For You</title>
+    <meta name="description" content="The Best Personality Test For You But..." />
+    <meta name="author" content="Si Jine Roh" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet"> 
+    
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <!-- js -->
+    <script type="text/javascript" src="js/data.json"></script>
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+    <!-- Title -->
+    <div class="container w-auto h-100" id="title">
+      <div class="row w-auto h-100 align-middle align-items-center">
+        <div class="col">
+          <span class="font-kaushan-big">
+            The <span class="highlight">Best</span><br>
+            Personality Test<br>
+            For You!
+          </span>
+        </div>
+        <div class="col text-center">
+          <button type="button" class="btn btn-lg larger btn-outline-primary" id="btn_start" onclick="onClickStart()">START</button>
+        </div>
+      </div>
+    </div>
+    <!-- Quetion -->
+    <div class="container w-auto h-100" id="question">
+      <div class="row w-auto h-100 align-middle align-items-center">
+        <div class="col">
+          <img src="" class="img-fluid" alt="" id="question_image">
+        </div>
+        <div class="col text-center">
+          <p class="fs-2 font-kaushan mb-5" id="question_string">
+            Question string
+          </p>
+          <div>
+            <button type="button" class="btn btn-lg question btn-outline-primary mx-5" id="btn_yes" onclick="onClickYes()">YES</button>
+            <button type="button" class="btn btn-lg question btn-outline-primary mx-5" id="btn_no" onclick="onClickNo()">NO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Answer -->
+    <div class="container w-auto h-100" id="answer">
+      <div class="row w-auto h-100 align-middle align-items-center">
+        <div class="col">
+          <img src="" class="img-fluid" alt="" id="answer_image">
+        </div>
+        <div class="col text-center">
+          <p class="fs-2 font-kaushan mb-5">
+            <span id="answer_string">Answer String</span>
+            <span id="answer_name" class="highlight">Answer Name</span>
+          </p>
+          <div>
+            <!-- <button type="button" class="btn btn-lg btn-outline-primary" id="btn_continue" onclick="onClickContinue()">PLAY VIDEO</button> -->
+            <a href="" class="btn btn-lg btn-outline-primary">PLAY VIDEO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Final -->
+    <!-- <div class="container" id="final">
+      
+    </div> -->
+  </body>
+</html>
