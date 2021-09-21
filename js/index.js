@@ -47,6 +47,7 @@ function showAnswer(data) {
     document.getElementById("answer_name").textContent = name;
     document.getElementById("answer_image").src = imageNameToPath(data.image);
     document.getElementById("answer_image").alt = data.image;
+    document.getElementById("answer_year").textContent = year;
     document.getElementById("answer").style.display = "block";
 }
 
@@ -57,7 +58,8 @@ function onClickContinue() {
 
 var queryString = window.location.search;
 var urlParams = new URLSearchParams(queryString);
-const code = urlParams.get('code')
+const code = urlParams.get('code');
+const year = urlParams.get('count');
 const name = convertCodeToName(code);
 var content = JSON.parse(data);
 var answer = content.answers[getRandomInt(content.answers.length)];
