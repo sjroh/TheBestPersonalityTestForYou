@@ -47,7 +47,8 @@ function showAnswer(data) {
     document.getElementById("answer_name").textContent = name;
     document.getElementById("answer_image").src = imageNameToPath(data.image);
     document.getElementById("answer_image").alt = data.image;
-    document.getElementById("answer_year").textContent = year;
+    document.getElementById("video_name").textContent = name;
+    document.getElementById("video_year").textContent = year;
     document.getElementById("answer").style.display = "block";
 }
 
