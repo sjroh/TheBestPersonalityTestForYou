@@ -1,5 +1,3 @@
-// 087105110103074105101
-
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
